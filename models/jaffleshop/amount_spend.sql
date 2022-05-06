@@ -14,4 +14,3 @@ common as(
 )
 
 select * from common
-order by desc total_amount
