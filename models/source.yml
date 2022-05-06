@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: dbo
+    database: ratecode
+    freshness: 
+    
+    tables:
+      - name: jaffle_shop_orders
+        freshness:

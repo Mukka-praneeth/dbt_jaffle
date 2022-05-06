@@ -2,36 +2,25 @@
 version: 2
 
 models:
+  
   - name: stg_jaffle_shop_customers
     description: "A staging area for customers"
     columns:
-      - name: ID
+      - name: customer_id
         description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+        
   - name: stg_jaffle_shop_orders
     description: "A staging area for orders"
     columns:
-      - name: ID
+      - name: order_id
         description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+  
   - name: stg_stripe_payment
     description: "A staging area for payments"
     columns:
-      - name: ID
+      - name: payment_id
         description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
 
-  - name: my_second_dbt_model
+  - name: customer
     description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+    
